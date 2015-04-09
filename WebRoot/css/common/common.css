@@ -1,0 +1,134 @@
+/* background:#474747 */
+/* color:#C8C8C8 */
+/* hover:#747474 */
+/* warn:#FF9F9F */
+@CHARSET "UTF-8";
+
+body {
+	width:100%;
+	height: 100%;
+	margin: 0px auto;
+	padding: 0px;
+	background-color: #474747;
+	color: #c8c8c8;
+	background-color: #474747;
+}
+
+body .body_div {
+	width: 1200px;
+	height: 100%;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+body .body_top {
+	width: 100%;
+	height: 40px;
+	margin: 0px;
+	padding: 0px;
+	background-color: 474747;
+}
+
+body .body_center {
+	float: left;
+	width: 100%;
+	min-height: 500px;
+	margin: 0px;
+	padding: 0px;
+	background: #474747;
+}
+body .body_center .body_center_l{
+	float: left;
+	width: 15%;
+	min-height: 500px;
+	margin: 0px;
+	padding: 0px;
+	background: #474747;
+}
+body .body_center .body_center_c{
+	float: left;
+	width: 65%;
+	min-height: 500px;
+	margin: 0px;
+	padding: 0px;
+	background: #474747;
+}
+body .body_center .body_center_r{
+	float: left;
+	width: 20%;
+	min-height: 500px;
+	margin: 0px;
+	padding: 0px;
+	background: #474747;
+}
+
+body .body_bottom {
+	float: left;
+	width: 100%;
+	height: 40px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #474747;
+	float: left;
+}
+
+
+.main_menu{
+	float: left;
+	border: 1px #747474 solid;
+	width: 120px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight:800;
+	margin: 10px 24px;
+	padding: 0px;
+	text-align: center;
+	cursor: pointer;
+}
+.main_menu:hover{
+	 background-color: #747474;
+}
+
+.main_menu_selected{
+	float: left;
+	border: 1px #747474 solid;
+	width: 120px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight:800;
+	margin: 10px 24px;
+	padding: 0px;
+	text-align: center;
+	cursor: default;
+	background-color: #747474;
+}
+
+.item_menu{
+	margin-left: 16px;
+}
+
+.item_ele{
+	border-bottom: 1px #747474 solid;
+	cursor: pointer;
+}
+.item_ele:hover{
+	background-color:#747474;
+	cursor: pointer;
+}
+
+
+.item_ele>.icon{
+	color: #747474;
+}
+
+.item_ele_selected{
+	border-bottom: 1px #747474 solid;
+	background-color:#747474;
+	cursor: default;
+}
+
+.item_ele_selected>.icon{
+	color: #474747;
+}

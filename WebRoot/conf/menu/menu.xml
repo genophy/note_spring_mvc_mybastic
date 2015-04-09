@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--id  name  i18n permission_code  href comment-->
+<menu>
+	<item id="homePage" name="首页" i18n="homePage" permission_code="20">
+	</item>
+	<item id="edit" name="编辑" i18n="edit" permission_code="20">
+		<item id="upload" name="上传" i18n="upload" permission_code="20"
+			href="handler.html" />
+	</item>
+	<item id="contact" name="联系我们" i18n="contact" permission_code="20">
+		<item id="internet" name="网联" i18n="internet" permission_code="20"
+			comment="网络联系方式">
+			<item id="qq" name="qq" i18n="qq" permission_code="20" />
+			<item id="msn" name="msn" i18n="msn" permission_code="20" />
+			<item id="group" name="其他" i18n="group" permission_code="20"
+				comment="其他群组">
+				<item id="renren" name="人人网" i18n="renren" permission_code="20" />
+				<item id="qqzone" name="qq空间" i18n="qqzone" permission_code="20" />
+			</item>
+		</item>
+	</item>
+</menu>

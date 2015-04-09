@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/eve_dialog/eve_dialog_core.js"></script>
+
+<link style="text/css" rel="stylesheet"
+	href="css/eve_dialog/eve_easyui.css">
+
+
+
+<script type="text/javascript">
+	
+
+	function testHandler() {
+
+		$.ajax({
+			url : "enoAjaxXMLHandler", // 请求的url地址,Struts2中就是请求的<action>的name
+			type : "post", // 提交方式
+			data : {
+				"ANNO_BEAN" : "testService"
+			}, // 提交的数据,一般使用JSON表示
+			success : function(data) { // 请求成功后执行的操作
+				alert(data);
+			},
+			error : function(data) { // 请求失败后执行的操作
+				alert("error")
+			}
+		})
+	}
+
+	function test() {
+		topEveDialog().confirmSetTitle("测试对话框");
+		topEveDialog().confirmSetContent("已经测试对话框");
+		topEveDialog().confirmSetOkMethod(function() {
+			alert("ok is click");
+		});
+		topEveDialog().confirmOpen();
+
+	}
+	function test1() {
+		topEveDialog().infoSetTitle("测试对话框1");
+		topEveDialog().infoSetContent("已经测试对话框");
+		topEveDialog().infoOpen();
+
+	}
+	function test2() {
+		topEveDialog().progressSetTitle("测试对话框2");
+		topEveDialog().progressSetContent("已经测试对话框");
+		topEveDialog().progressOpen();
+
+	}
+	function test3() {
+		topEveDialog().confirmErrorSetTitle("测试对话框3");
+		topEveDialog().confirmErrorSetContent("已经测试对话框");
+		topEveDialog().confirmErrorSetOkMethod(function() {
+			alert("ok is click");
+		});
+		topEveDialog().confirmErrorOpen();
+
+	}
+	function test4() {
+		topEveDialog().infoErrorSetTitle("测试对话框4");
+		topEveDialog().infoErrorSetContent("已经测试对话框");
+		topEveDialog().infoErrorOpen();
+
+	}
+</script>
+
+</head>
+<body class="eve_body">
+	<input type="button" onclick="test()" value="click">
+	<input type="button" onclick="test1()" value="click1">
+	<input type="button" onclick="test2()" value="click2">
+	<input type="button" onclick="test3()" value="click3">
+	<input type="button" onclick="test4()" value="click4">
+
+
+	<br />
+	<a class="dbutton">ccccc</a>
+	<br />
+	<input type="button" class="dbutton" value="dadfasf">
+	<br />
+	<input type="text" class="dbutton">
+</body>
+</html>
